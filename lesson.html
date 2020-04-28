@@ -1,0 +1,227 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Lesson 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+
+    html,
+    body {
+        font-family: 'Raleway';
+        margin: 0;
+        padding: 0;
+        background: #34363b;
+        /* hi im a note */
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 55px;
+        box-sizing: border-box;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .panel {
+        min-width: 300px;
+        border-radius: 5px;
+        flex: 1;
+        background: #484c55;
+        margin-right: 15px;
+        padding-bottom: 50px;
+        margin-bottom: 15px;
+    }
+
+    .panel:last-of-type {
+        margin-right: 0;
+    }
+
+    .panel-top {
+        height: 45px;
+        display: flex;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: lighter;
+        align-items: center;
+        padding: 0px 15px;
+        font-size: 14pt;
+        color: #fff;
+        border-bottom: solid 1px #ffffff30;
+    }
+
+    .panel-content {
+        padding: 15px;
+    }
+
+    .line-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    .line-item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .line-item .circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background: #ffffff30;
+        margin-right: 10px;
+        transition: .3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25pt;
+        color: #484c55
+    }
+
+    .line-item .lines {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        flex: 1;
+        transition: .3s ease;
+    }
+
+    .line-item .lines .line {
+        background: #ffffff30;
+        flex: 1;
+        transition: all .3s ease;
+        margin-bottom: 10px;
+        transition: .3s ease;
+    }
+    }
+
+    .line-item .lines .line:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    .line-item:hover .circle,.line-item:hover .lines .line {
+        background: rgb(111, 70, 206);
+    }
+
+    @media(max-width:828px) {
+        .panel {
+            margin-right: 0px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Hello note -->
+    <div class="container">
+        <div class="panel">
+            <div class="panel-top">One</div>
+            <div class="panel-content">
+
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-top">Two</div>
+            <div class="panel-content">
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-top">three</div>
+            <div class="panel-content">
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="line-item">
+                    <div class="circle">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
